@@ -7,7 +7,5 @@
 **/.screenshots
 
 /**/*.csv
-/**/ContainerInformation/*.json
 /**/*.xlsx
-.vscode/settings.json
-.project
+
