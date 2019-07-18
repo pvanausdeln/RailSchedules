@@ -2,6 +2,10 @@
 
 */.screenshots
 
+**/.local
+
+**/.screenshots
+
 /**/*.csv
 /**/ContainerInformation/*.json
 /**/*.xlsx
