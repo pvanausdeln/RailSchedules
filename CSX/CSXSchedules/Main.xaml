@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="294,285" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="954,6827" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="368,332" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="914,6707" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="chrome" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableCSV" />
@@ -58,13 +58,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser BrowserType="Chrome" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="330,51" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[chrome]" Url="https://shipcsx.com/pub_sx_ischedulepublic_jct/sx.ischedulepublic/ScheduleLanding.evt">
+    <ui:OpenBrowser BrowserType="Chrome" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="876,6398" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[chrome]" Url="https://shipcsx.com/pub_sx_ischedulepublic_jct/sx.ischedulepublic/ScheduleLanding.evt">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,3933" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="846,6299" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableOrigins" />
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableDestinations" />
@@ -80,7 +80,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="808,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableCSV]</OutArgument>
               </Assign.To>
@@ -88,7 +88,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
               </Assign.Value>
             </Assign>
-            <Sequence DisplayName="Add Columns" sap:VirtualizedContainerService.HintSize="498,66" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence DisplayName="Add Columns" sap:VirtualizedContainerService.HintSize="808,68" sap2010:WorkflowViewState.IdRef="Sequence_17">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -109,8 +109,8 @@
               <ui:AddDataColumn x:TypeArguments="x:Object" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Available Date" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_11" MaxLength="100" Unique="False" />
               <ui:AddDataColumn x:TypeArguments="x:Object" Column="{x:Null}" DefaultValue="{x:Null}" AllowDBNull="True" AutoIncrement="False" ColumnName="Available Time" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="216,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_12" MaxLength="100" Unique="False" />
             </Sequence>
-            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="498,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen50'" sap:VirtualizedContainerService.HintSize="498,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="808,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen50'" sap:VirtualizedContainerService.HintSize="808,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -125,7 +125,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="00aa289cca2cafeb801f8eb3b822e0ca" Selector="&lt;webctrl id='ext-gen50' tag='IMG' /&gt;" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <Assign sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign sap:VirtualizedContainerService.HintSize="808,60" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableOrigins]</OutArgument>
               </Assign.To>
@@ -133,33 +133,31 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
               </Assign.Value>
             </Assign>
-            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="498,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="808,68" sap2010:WorkflowViewState.IdRef="Sequence_46">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,490" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="aeea033a97ee21589dc2010610fa0e4a" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_13" InformativeScreenshot="be76c49cd6234b5c0b11ac414b242b4b" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,344" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_45">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableOrigins]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen139'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='OriginTerminal' attr='text'&gt;&lt;webctrl tag='div' class='x-combo-list-item x-combo-selected'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_6" MaxNumberOfResults="1000">
+                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableOrigins]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen139'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_16" MaxNumberOfResults="0">
                         <ui:ExtractData.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="1766478897b63b1e1476e0cdc116f64e" Selector="&lt;webctrl id='ext-gen139' tag='DIV' parentid='ext-gen138' /&gt;" WaitForReady="COMPLETE" />
-                        </ui:ExtractData.Target>
-                      </ui:ExtractData>
-                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableOrigins]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen139'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='OriginTerminal' attr='text'&gt;&lt;webctrl tag='div' class='x-combo-list-item'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_7" MaxNumberOfResults="1000">
-                        <ui:ExtractData.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="1766478897b63b1e1476e0cdc116f64e" Selector="&lt;webctrl id='ext-gen139' tag='DIV' parentid='ext-gen138' /&gt;" WaitForReady="COMPLETE" />
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="7485215ff88e9365c49f07923a82d6ba" Selector="&lt;webctrl id='ext-gen139' tag='DIV' /&gt;" WaitForReady="COMPLETE" />
                         </ui:ExtractData.Target>
                       </ui:ExtractData>
                     </Sequence>
@@ -167,7 +165,7 @@
                 </ui:BrowserScope.Body>
               </ui:BrowserScope>
             </Sequence>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen50'" sap:VirtualizedContainerService.HintSize="498,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen50'" sap:VirtualizedContainerService.HintSize="808,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -182,493 +180,542 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="00aa289cca2cafeb801f8eb3b822e0ca" Selector="&lt;webctrl id='ext-gen50' tag='IMG' /&gt;" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableOrigins]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="498,3075" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableOrigins]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="808,5437" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,3046" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap:VirtualizedContainerService.HintSize="762,5289" sap2010:WorkflowViewState.IdRef="Sequence_39">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  originCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="414,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[row.Item(0).ToString+ &quot;[k(enter)]&quot;]">
-                      <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b7c8eeb28d85c960c057a345b3005c73" Selector="&lt;webctrl id='originCityCombo' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
-                      </ui:TypeInto.Target>
-                    </ui:TypeInto>
-                    <Assign sap:VirtualizedContainerService.HintSize="414,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[originCity]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="414,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                    <Assign sap:VirtualizedContainerService.HintSize="414,60" sap2010:WorkflowViewState.IdRef="Assign_7">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableDestinations]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen52'" sap:VirtualizedContainerService.HintSize="414,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                      <ui:Click.CursorPosition>
-                        <ui:CursorPosition Position="Center">
-                          <ui:CursorPosition.OffsetX>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetX>
-                          <ui:CursorPosition.OffsetY>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetY>
-                        </ui:CursorPosition>
-                      </ui:Click.CursorPosition>
-                      <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="459a5f7a19375f9a671271bcffdc45ee" Selector="&lt;webctrl id='ext-gen66' tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
-                      </ui:Click.Target>
-                    </ui:Click>
-                    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="414,66" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="724,5197" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_9" InformativeScreenshot="fde97b017212ccf40ab8b4b2bdfec477" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
-                        <ui:BrowserScope.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
+                      <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  originCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="686,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[row.Item(0).ToString+ &quot;[k(enter)]&quot;]">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b7c8eeb28d85c960c057a345b3005c73" Selector="&lt;webctrl id='originCityCombo' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <Assign sap:VirtualizedContainerService.HintSize="686,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[originCity]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="686,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      <Assign sap:VirtualizedContainerService.HintSize="686,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableDestinations]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen52'" sap:VirtualizedContainerService.HintSize="686,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="459a5f7a19375f9a671271bcffdc45ee" Selector="&lt;webctrl id='ext-gen66' tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="686,68" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_9" InformativeScreenshot="fde97b017212ccf40ab8b4b2bdfec477" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
+                          <ui:BrowserScope.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:ExtractData NextLinkSelector="{x:Null}" DataTable="[ExtractDataTableDestinations]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='DestinationTerminals' attr='text'&gt;&lt;webctrl tag='div'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_12" MaxNumberOfResults="100">
+                                  <ui:ExtractData.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="2576de9eca0281f2570ec51e0c2f7b00" Selector="&lt;webctrl tag='DIV' class='x-combo-list-inner' css-selector='body&amp;gt;div&amp;gt;div' parentclass='x-layer x-combo-list ' idx='5' /&gt;" WaitForReady="INTERACTIVE" />
+                                  </ui:ExtractData.Target>
+                                </ui:ExtractData>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:BrowserScope.Body>
+                        </ui:BrowserScope>
+                      </Sequence>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen52'" sap:VirtualizedContainerService.HintSize="686,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="459a5f7a19375f9a671271bcffdc45ee" Selector="&lt;webctrl id='ext-gen66' tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableDestinations]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="686,4123" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="640,3975" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Int32" Name="typesIndex" />
+                                <Variable x:TypeArguments="s:String[]" Name="originState" />
+                                <Variable x:TypeArguments="s:String[]" Name="destinationState" />
+                              </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:ExtractData NextLinkSelector="{x:Null}" DataTable="[ExtractDataTableDestinations]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='DestinationTerminals' attr='text'&gt;&lt;webctrl tag='div'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_12" MaxNumberOfResults="100">
-                                <ui:ExtractData.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="2576de9eca0281f2570ec51e0c2f7b00" Selector="&lt;webctrl tag='DIV' class='x-combo-list-inner' css-selector='body&amp;gt;div&amp;gt;div' parentclass='x-layer x-combo-list ' idx='5' /&gt;" WaitForReady="INTERACTIVE" />
-                                </ui:ExtractData.Target>
-                              </ui:ExtractData>
-                            </Sequence>
-                          </ActivityAction>
-                        </ui:BrowserScope.Body>
-                      </ui:BrowserScope>
-                    </Sequence>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ext-gen52'" sap:VirtualizedContainerService.HintSize="414,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                      <ui:Click.CursorPosition>
-                        <ui:CursorPosition Position="Center">
-                          <ui:CursorPosition.OffsetX>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetX>
-                          <ui:CursorPosition.OffsetY>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetY>
-                        </ui:CursorPosition>
-                      </ui:Click.CursorPosition>
-                      <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="459a5f7a19375f9a671271bcffdc45ee" Selector="&lt;webctrl id='ext-gen66' tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
-                      </ui:Click.Target>
-                    </ui:Click>
-                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableDestinations]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="414,1890" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-                      <ui:ForEachRow.Body>
-                        <ActivityAction x:TypeArguments="sd:DataRow">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="368,1742" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                            <Sequence.Variables>
-                              <Variable x:TypeArguments="x:Int32" Name="typesIndex" />
-                              <Variable x:TypeArguments="s:String[]" Name="originState" />
-                              <Variable x:TypeArguments="s:String[]" Name="destinationState" />
-                            </Sequence.Variables>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  originCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="330,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="False" Text="[originCity+ &quot;[k(enter)]&quot;]">
-                              <ui:TypeInto.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b7c8eeb28d85c960c057a345b3005c73" Selector="&lt;webctrl id='originCityCombo' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
-                              </ui:TypeInto.Target>
-                            </ui:TypeInto>
-                            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  destCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="330,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="False" Text="[row.Item(0).ToString+ &quot;[k(enter)]&quot;]">
-                              <ui:TypeInto.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="73270176ee7105308a06c5186346e9f1" Selector="&lt;webctrl id='destCityCombo' tag='INPUT' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' parentid='ext-gen65' /&gt;" WaitForReady="INTERACTIVE" />
-                              </ui:TypeInto.Target>
-                            </ui:TypeInto>
-                            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_13">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:String">[destinationCity]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  ext-gen78'" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                              <ui:Click.CursorPosition>
-                                <ui:CursorPosition Position="Center">
-                                  <ui:CursorPosition.OffsetX>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetX>
-                                  <ui:CursorPosition.OffsetY>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetY>
-                                </ui:CursorPosition>
-                              </ui:Click.CursorPosition>
-                              <ui:Click.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="242ee51b2231acc9feefaaa4968dd65b" Selector="&lt;webctrl id='ext-gen78' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
-                              </ui:Click.Target>
-                            </ui:Click>
-                            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_3">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableTypes]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_4">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableBaseInfo]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableDays]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <Sequence DisplayName="Data Scraping Types" sap:VirtualizedContainerService.HintSize="330,66" sap2010:WorkflowViewState.IdRef="Sequence_33">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_10" InformativeScreenshot="7ae7f5ad2a3a336e4b017642bac224b9" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
-                                <ui:BrowserScope.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_32">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableTypes]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen176'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Types' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-header x-unselectable' idx='1'/&gt;&lt;webctrl tag='span' class='x-panel-header-text' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_13" MaxNumberOfResults="100">
-                                        <ui:ExtractData.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="be85f9c333d6a31bd8f666bb5d4e24bd" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
-                                        </ui:ExtractData.Target>
-                                      </ui:ExtractData>
-                                    </Sequence>
-                                  </ActivityAction>
-                                </ui:BrowserScope.Body>
-                              </ui:BrowserScope>
-                            </Sequence>
-                            <Sequence DisplayName="Data Scraping Base Info" sap:VirtualizedContainerService.HintSize="330,66" sap2010:WorkflowViewState.IdRef="Sequence_35">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_11" InformativeScreenshot="6ef6710ce6825781e61181ab56ba66f7" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
-                                <ui:BrowserScope.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableBaseInfo]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen176'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;/row&gt;&lt;column exact='1' name='Location' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Event Name' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='2'/&gt;&lt;/column&gt;&lt;column exact='1' name='Train' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='3'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_14" MaxNumberOfResults="100">
-                                        <ui:ExtractData.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="be85f9c333d6a31bd8f666bb5d4e24bd" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
-                                        </ui:ExtractData.Target>
-                                      </ui:ExtractData>
-                                    </Sequence>
-                                  </ActivityAction>
-                                </ui:BrowserScope.Body>
-                              </ui:BrowserScope>
-                            </Sequence>
-                            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="330,66" sap2010:WorkflowViewState.IdRef="Sequence_37">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_12" InformativeScreenshot="21edfec9c55923232c440dedd1cbd9b3" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
-                                <ui:BrowserScope.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableDays]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen176'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;/row&gt;&lt;column exact='1' name='Day1' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='4'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day2' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='5'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day3' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='6'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day4' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='7'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day5' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='8'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day6' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='9'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day7' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='10'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_15" MaxNumberOfResults="100">
-                                        <ui:ExtractData.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="be85f9c333d6a31bd8f666bb5d4e24bd" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
-                                        </ui:ExtractData.Target>
-                                      </ui:ExtractData>
-                                    </Sequence>
-                                  </ActivityAction>
-                                </ui:BrowserScope.Body>
-                              </ui:BrowserScope>
-                            </Sequence>
-                            <Assign sap:VirtualizedContainerService.HintSize="330,60" sap2010:WorkflowViewState.IdRef="Assign_8">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="s:String[]">[arrayRow]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="s:String[]">[new string(12){}]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <ui:ForEachRow CurrentIndex="[typesIndex]" DataTable="[ExtractDataTableTypes]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="330,214" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
-                              <ui:ForEachRow.Body>
-                                <ActivityAction x:TypeArguments="sd:DataRow">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                                  </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="216,66" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                    <Sequence.Variables>
-                                      <Variable x:TypeArguments="x:Int32" Name="baseInfoIndex" />
-                                      <Variable x:TypeArguments="x:Int32" Default="0" Name="dayIndex" />
-                                    </Sequence.Variables>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_1" Input="[ExtractDataTableBaseInfo.Rows(2*typesIndex).Item(0).ToString]" Result="[originState]" Separator="," StringSplitOptions="None" />
-                                    <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_2" Input="[ExtractDataTableBaseInfo.Rows(2*typesIndex+1).Item(0).ToString]" Result="[destinationState]" Separator="," StringSplitOptions="None" />
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,315" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-                                      <ui:MultipleAssign.AssignOperations>
-                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(0)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[originCity]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(1)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[originState(1)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(2)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[destinationCity]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(3)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[destinationState(1)]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(4)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(5)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[ExtractDataTableBaseInfo.Rows(2*typesIndex).Item(2).ToString]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:String">[arrayRow(6)]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:String">[ExtractDataTableBaseInfo.Rows(2*typesIndex+1).Item(2).ToString]</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
-                                            <ui:AssignOperation.To>
-                                              <OutArgument x:TypeArguments="x:Int32">[dayIndex]</OutArgument>
-                                            </ui:AssignOperation.To>
-                                            <ui:AssignOperation.Value>
-                                              <InArgument x:TypeArguments="x:Int32">0</InArgument>
-                                            </ui:AssignOperation.Value>
-                                          </ui:AssignOperation>
-                                        </scg:List>
-                                      </ui:MultipleAssign.AssignOperations>
-                                    </ui:MultipleAssign>
-                                    <While sap:VirtualizedContainerService.HintSize="480,1075" sap2010:WorkflowViewState.IdRef="While_1">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <While.Condition>[dayIndex &lt; 7]</While.Condition>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="372,917" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  originCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="602,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="False" Text="[originCity+ &quot;[k(enter)]&quot;]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="b7c8eeb28d85c960c057a345b3005c73" Selector="&lt;webctrl id='originCityCombo' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  destCityCombo'" EmptyField="False" sap:VirtualizedContainerService.HintSize="602,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="False" Text="[row.Item(0).ToString+ &quot;[k(enter)]&quot;]">
+                                <ui:TypeInto.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="73270176ee7105308a06c5186346e9f1" Selector="&lt;webctrl id='destCityCombo' tag='INPUT' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;fieldset&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' parentid='ext-gen65' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:TypeInto.Target>
+                              </ui:TypeInto>
+                              <Assign sap:VirtualizedContainerService.HintSize="602,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[destinationCity]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="602,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  ext-gen78'" sap:VirtualizedContainerService.HintSize="602,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="242ee51b2231acc9feefaaa4968dd65b" Selector="&lt;webctrl id='ext-gen78' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="602,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                              <Sequence sap:VirtualizedContainerService.HintSize="602,3103" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="564,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableTypes]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="564,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableBaseInfo]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="564,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="sd:DataTable">[ExtractDataTableDays]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Sequence DisplayName="Data Scraping Types" sap:VirtualizedContainerService.HintSize="564,436" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_14" InformativeScreenshot="7ae7f5ad2a3a336e4b017642bac224b9" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
+                                    <ui:BrowserScope.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableTypes]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen1144'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-header x-unselectable' idx='1'/&gt;&lt;webctrl tag='span' class='x-panel-header-text' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='isc-sch-head-r' idx='1'/&gt;&lt;webctrl tag='td' class='isc-sch-head' idx='1'/&gt;&lt;webctrl tag='em' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_22" MaxNumberOfResults="0">
+                                            <ui:ExtractData.Target>
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="57421992ae370a096feb760ce265b4e9" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
+                                            </ui:ExtractData.Target>
+                                          </ui:ExtractData>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:BrowserScope.Body>
+                                  </ui:BrowserScope>
+                                </Sequence>
+                                <Sequence DisplayName="Data Scraping Base Info" sap:VirtualizedContainerService.HintSize="564,68" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_15" InformativeScreenshot="6ef6710ce6825781e61181ab56ba66f7" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
+                                    <ui:BrowserScope.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableBaseInfo]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen176'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;/row&gt;&lt;column exact='1' name='Location' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Event Name' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='2'/&gt;&lt;/column&gt;&lt;column exact='1' name='Train' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='3'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_18" MaxNumberOfResults="100">
+                                            <ui:ExtractData.Target>
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="be85f9c333d6a31bd8f666bb5d4e24bd" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
+                                            </ui:ExtractData.Target>
+                                          </ui:ExtractData>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:BrowserScope.Body>
+                                  </ui:BrowserScope>
+                                </Sequence>
+                                <Sequence DisplayName="Data Scraping days" sap:VirtualizedContainerService.HintSize="564,68" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'ShipCSX I Page'" sap:VirtualizedContainerService.HintSize="430,344" sap2010:WorkflowViewState.IdRef="BrowserScope_16" InformativeScreenshot="21edfec9c55923232c440dedd1cbd9b3" Selector="&lt;html app='chrome.exe' title='ShipCSX - Intermodal Schedules Suite' /&gt;">
+                                    <ui:BrowserScope.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="368,198" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:ExtractData NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTableDays]" DelayBetweenPagesMS="300" DisplayName="Extract Structured Data 'DIV  ext-gen176'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;/row&gt;&lt;column exact='1' name='Day1' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='4'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day2' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='5'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day3' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='6'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day4' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='7'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day5' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='8'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day6' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='9'/&gt;&lt;/column&gt;&lt;column exact='1' name='Day7' attr='text'&gt;&lt;webctrl tag='div' class=' x-panel'/&gt;&lt;webctrl tag='div' class='x-panel-bwrap' idx='1'/&gt;&lt;webctrl tag='div' class='x-panel-body' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='iSchedule' idx='1'/&gt;&lt;webctrl tag='table' idx='1'/&gt;&lt;webctrl tag='tbody' idx='1'/&gt;&lt;webctrl tag='tr' class='x-grid3-row'/&gt;&lt;webctrl tag='td' class='isc-grid-td' idx='10'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="ExtractData_19" MaxNumberOfResults="100">
+                                            <ui:ExtractData.Target>
+                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="be85f9c333d6a31bd8f666bb5d4e24bd" Selector="&lt;webctrl tag='DIV' class='x-panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentclass='x-panel-bwrap' /&gt;" WaitForReady="COMPLETE" />
+                                            </ui:ExtractData.Target>
+                                          </ui:ExtractData>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:BrowserScope.Body>
+                                  </ui:BrowserScope>
+                                </Sequence>
+                                <Assign sap:VirtualizedContainerService.HintSize="564,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[arrayRow]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[new string(12){}]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:ForEachRow CurrentIndex="[typesIndex]" DataTable="[ExtractDataTableTypes]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="564,1919" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                  <ui:ForEachRow.Body>
+                                    <ActivityAction x:TypeArguments="sd:DataRow">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="518,1771" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                         <Sequence.Variables>
-                                          <Variable x:TypeArguments="s:String[]" Name="cutoffDayInfo" />
-                                          <Variable x:TypeArguments="s:String[]" Name="availableDayInfo" />
+                                          <Variable x:TypeArguments="x:Int32" Name="baseInfoIndex" />
+                                          <Variable x:TypeArguments="x:Int32" Default="0" Name="dayIndex" />
                                         </Sequence.Variables>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_3" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_4" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,191" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="480,22" sap2010:WorkflowViewState.IdRef="SplitString_7" Input="[ExtractDataTableBaseInfo.Rows(2*typesIndex).Item(0).ToString]" Result="[originState]" Separator="," StringSplitOptions="None" />
+                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="480,22" sap2010:WorkflowViewState.IdRef="SplitString_8" Input="[ExtractDataTableBaseInfo.Rows(2*typesIndex+1).Item(0).ToString]" Result="[destinationState]" Separator="," StringSplitOptions="None" />
+                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="480,315" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                           <ui:MultipleAssign.AssignOperations>
                                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(7)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(0)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[cutoffDayInfo(0)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[originCity]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(9)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(1)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[cutoffDayInfo(1)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[originState(1)]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(10)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(2)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[availableDayInfo(0)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[destinationCity]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(12)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(3)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[availableDayInfo(1)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[destinationState(1)]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                            </scg:List>
-                                          </ui:MultipleAssign.AssignOperations>
-                                        </ui:MultipleAssign>
-                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_5" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                        <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_6" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,222" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
-                                          <ui:MultipleAssign.AssignOperations>
-                                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(7)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(4)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[cutoffDayInfo(0)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[row.Item(0).ToString]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(9)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(5)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[cutoffDayInfo(1)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[ExtractDataTableBaseInfo.Rows(2*typesIndex).Item(2).ToString]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
                                                 <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(10)]</OutArgument>
+                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(6)]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[availableDayInfo(0)]</InArgument>
+                                                  <InArgument x:TypeArguments="x:String">[ExtractDataTableBaseInfo.Rows(2*typesIndex+1).Item(2).ToString]</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
-                                                <ui:AssignOperation.To>
-                                                  <OutArgument x:TypeArguments="x:String">[arrayRow(12)]</OutArgument>
-                                                </ui:AssignOperation.To>
-                                                <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:String">[availableDayInfo(1)]</InArgument>
-                                                </ui:AssignOperation.Value>
-                                              </ui:AssignOperation>
-                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_25">
                                                 <ui:AssignOperation.To>
                                                   <OutArgument x:TypeArguments="x:Int32">[dayIndex]</OutArgument>
                                                 </ui:AssignOperation.To>
                                                 <ui:AssignOperation.Value>
-                                                  <InArgument x:TypeArguments="x:Int32">[dayIndex + 1]</InArgument>
+                                                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
                                                 </ui:AssignOperation.Value>
                                               </ui:AssignOperation>
                                             </scg:List>
                                           </ui:MultipleAssign.AssignOperations>
                                         </ui:MultipleAssign>
-                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                        <While sap:VirtualizedContainerService.HintSize="480,1200" sap2010:WorkflowViewState.IdRef="While_2">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <While.Condition>[dayIndex &lt; 7]</While.Condition>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="372,1041" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="s:String[]" Name="cutoffDayInfo" />
+                                              <Variable x:TypeArguments="s:String[]" Name="availableDayInfo" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_9" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
+                                            <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_10" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,253" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+                                              <ui:MultipleAssign.AssignOperations>
+                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_26">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(7)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[cutoffDayInfo(0)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_27">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(9)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[cutoffDayInfo(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_28">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(10)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[availableDayInfo(0)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(12)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[availableDayInfo(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_53">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(8)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_54">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(11)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                </scg:List>
+                                              </ui:MultipleAssign.AssignOperations>
+                                            </ui:MultipleAssign>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                            <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_13" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
+                                            <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_14" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,284" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                                              <ui:MultipleAssign.AssignOperations>
+                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_55">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(7)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[cutoffDayInfo(0)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_56">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(9)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[cutoffDayInfo(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_57">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(10)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[availableDayInfo(0)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_58">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(12)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[availableDayInfo(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_59">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Int32">[dayIndex]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Int32">[dayIndex+1]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_60">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(8)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_61">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:String">[arrayRow(11)]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                </scg:List>
+                                              </ui:MultipleAssign.AssignOperations>
+                                            </ui:MultipleAssign>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+                                          </Sequence>
+                                        </While>
                                       </Sequence>
-                                    </While>
-                                  </Sequence>
-                                </ActivityAction>
-                              </ui:ForEachRow.Body>
-                            </ui:ForEachRow>
-                            <ui:RefreshBrowser Browser="[chrome]" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="RefreshBrowser_2" />
-                          </Sequence>
-                        </ActivityAction>
-                      </ui:ForEachRow.Body>
-                    </ui:ForEachRow>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="414,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                      <ui:Click.CursorPosition>
-                        <ui:CursorPosition Position="Center">
-                          <ui:CursorPosition.OffsetX>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetX>
-                          <ui:CursorPosition.OffsetY>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetY>
-                        </ui:CursorPosition>
-                      </ui:Click.CursorPosition>
-                      <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d7fda4eb2c2de96ad001762c43c191ec" Selector="&lt;webctrl id='ext-comp-1019' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" WaitForReady="INTERACTIVE" />
-                      </ui:Click.Target>
-                    </ui:Click>
+                                    </ActivityAction>
+                                  </ui:ForEachRow.Body>
+                                </ui:ForEachRow>
+                              </Sequence>
+                              <ui:RefreshBrowser Browser="[chrome]" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="602,22" sap2010:WorkflowViewState.IdRef="RefreshBrowser_2" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="686,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="d7fda4eb2c2de96ad001762c43c191ec" Selector="&lt;webctrl id='ext-comp-1019' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </Sequence>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
@@ -678,12 +725,12 @@
       </ui:OpenBrowser.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTableCSV]" Delimitator="Comma" DisplayName="Write CSV" FilePath="CSX_Schedules" sap:VirtualizedContainerService.HintSize="330,87" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
-    <ui:CloseTab Browser="[chrome]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+    <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTableCSV]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="876,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="CSV_Schedules.xlsx" />
+    <ui:CloseTab Browser="[chrome]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="876,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
   </Sequence>
 </Activity>
