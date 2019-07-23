@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1067,7319" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1067,6641" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -49,7 +49,7 @@
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1027,7239" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1027,6521" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="chrome" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableCSV" />
@@ -59,13 +59,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser BrowserType="Chrome" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="989,6930" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[chrome]" Url="https://shipcsx.com/pub_sx_ischedulepublic_jct/sx.ischedulepublic/ScheduleLanding.evt">
+    <ui:OpenBrowser BrowserType="Chrome" DisplayName="Open Browser" Hidden="False" sap:VirtualizedContainerService.HintSize="989,6212" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" UiBrowser="[chrome]" Url="https://shipcsx.com/pub_sx_ischedulepublic_jct/sx.ischedulepublic/ScheduleLanding.evt">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="959,6831" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="959,6113" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableOrigins" />
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTableDestinations" />
@@ -181,19 +181,19 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="00aa289cca2cafeb801f8eb3b822e0ca" Selector="&lt;webctrl id='ext-gen50' tag='IMG' /&gt;" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableOrigins]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="921,5973" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableOrigins]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="921,5255" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="875,5826" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                  <Sequence sap:VirtualizedContainerService.HintSize="875,5703" sap2010:WorkflowViewState.IdRef="Sequence_39">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="837,5734" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="837,5611" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -281,17 +281,18 @@
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="459a5f7a19375f9a671271bcffdc45ee" Selector="&lt;webctrl id='ext-gen66' tag='IMG' /&gt;" WaitForReady="INTERACTIVE" />
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableDestinations]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="799,4662" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTableDestinations]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="799,4539" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                         <ui:ForEachRow.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="753,4515" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="753,4391" sap2010:WorkflowViewState.IdRef="Sequence_9">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:Int32" Name="typesIndex" />
                                 <Variable x:TypeArguments="s:String[]" Name="originState" />
                                 <Variable x:TypeArguments="s:String[]" Name="destinationState" />
+                                <Variable x:TypeArguments="x:Boolean" Name="elementExists" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -334,7 +335,39 @@
                                 </ui:Click.Target>
                               </ui:Click>
                               <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="715,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                              <Sequence sap:VirtualizedContainerService.HintSize="715,3643" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                              <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'SPAN  ext-gen233'" sap:VirtualizedContainerService.HintSize="715,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                <ui:UiElementExists.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fcece6d17b2e624bbee4157c125a4c4c" Selector="&lt;webctrl tag='SPAN' class='ext-mb-text' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' parentclass='ext-mb-content' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                                </ui:UiElementExists.Target>
+                              </ui:UiElementExists>
+                              <If Condition="[elementExists]" sap:VirtualizedContainerService.HintSize="715,408" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="368,260" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="330,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="8ea8810dd82d6801cd95c2b0e8217bdb" Selector="&lt;webctrl tag='BUTTON' class=' x-btn-text' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;em&amp;gt;button' parentclass='x-btn-mc' idx='1' /&gt;" WaitForReady="INTERACTIVE" />
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                    <ui:Continue sap:VirtualizedContainerService.HintSize="330,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                  </Sequence>
+                                </If.Then>
+                              </If>
+                              <Sequence sap:VirtualizedContainerService.HintSize="715,2925" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -460,13 +493,13 @@
                                     <InArgument x:TypeArguments="s:String[]">[new string(12){}]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:ForEachRow CurrentIndex="[typesIndex]" DataTable="[ExtractDataTableTypes]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="677,2463" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                <ui:ForEachRow CurrentIndex="[typesIndex]" DataTable="[ExtractDataTableTypes]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="677,1745" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                                       </ActivityAction.Argument>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="631,2316" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="631,1598" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Int32" Name="baseInfoIndex" />
                                           <Variable x:TypeArguments="x:Int32" Default="0" Name="dayIndex" />
@@ -549,7 +582,7 @@
                                             </scg:List>
                                           </ui:MultipleAssign.AssignOperations>
                                         </ui:MultipleAssign>
-                                        <While sap:VirtualizedContainerService.HintSize="593,1745" sap2010:WorkflowViewState.IdRef="While_2">
+                                        <While sap:VirtualizedContainerService.HintSize="593,1027" sap2010:WorkflowViewState.IdRef="While_2">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -557,7 +590,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <While.Condition>[dayIndex &lt; 7]</While.Condition>
-                                          <Sequence sap:VirtualizedContainerService.HintSize="551,1588" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                          <Sequence sap:VirtualizedContainerService.HintSize="551,870" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="s:String[]" Name="cutoffDayInfo" />
                                               <Variable x:TypeArguments="s:String[]" Name="availableDayInfo" />
@@ -567,7 +600,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <If Condition="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString &lt;&gt; &quot;X&quot;]" sap:VirtualizedContainerService.HintSize="513,678" sap2010:WorkflowViewState.IdRef="If_1">
+                                            <If Condition="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString &lt;&gt; &quot;X&quot; AND ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString &lt;&gt; &quot;X&quot;]" sap:VirtualizedContainerService.HintSize="513,678" sap2010:WorkflowViewState.IdRef="If_1">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -582,7 +615,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_9" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                                  <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_10" Input="[ExtractDataTableDays.Rows(2*typesIndex).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
+                                                  <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_10" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
                                                   <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,253" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
                                                     <ui:MultipleAssign.AssignOperations>
                                                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
@@ -638,74 +671,6 @@
                                                     </ui:MultipleAssign.AssignOperations>
                                                   </ui:MultipleAssign>
                                                   <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
-                                                </Sequence>
-                                              </If.Then>
-                                            </If>
-                                            <If Condition="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString &lt;&gt; &quot;X&quot;]" sap:VirtualizedContainerService.HintSize="513,678" sap2010:WorkflowViewState.IdRef="If_2">
-                                              <If.Then>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="372,531" sap2010:WorkflowViewState.IdRef="Sequence_57">
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                  <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_13" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[cutoffDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                                  <p:SplitString DisplayName="Split string" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="SplitString_14" Input="[ExtractDataTableDays.Rows(2*typesIndex+1).Item(dayIndex).ToString]" Result="[availableDayInfo]" Separator="[vbLf]" StringSplitOptions="None" />
-                                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="334,253" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
-                                                    <ui:MultipleAssign.AssignOperations>
-                                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_55">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(7)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[cutoffDayInfo(0)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_56">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(9)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[cutoffDayInfo(1)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_57">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(10)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[availableDayInfo(0)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_58">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(12)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[availableDayInfo(1)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_60">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(8)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_61">
-                                                          <ui:AssignOperation.To>
-                                                            <OutArgument x:TypeArguments="x:String">[arrayRow(11)]</OutArgument>
-                                                          </ui:AssignOperation.To>
-                                                          <ui:AssignOperation.Value>
-                                                            <InArgument x:TypeArguments="x:String">[split(ExtractDataTableTypes.Rows(typesIndex).Item(1).ToString, ":")(1)]</InArgument>
-                                                          </ui:AssignOperation.Value>
-                                                        </ui:AssignOperation>
-                                                      </scg:List>
-                                                    </ui:MultipleAssign.AssignOperations>
-                                                  </ui:MultipleAssign>
-                                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[arrayRow]" DataTable="[ExtractDataTableCSV]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
                                                 </Sequence>
                                               </If.Then>
                                             </If>
